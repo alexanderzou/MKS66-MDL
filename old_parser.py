@@ -131,7 +131,7 @@ def parse_file( fname, edges, polygons, transform, screen, zbuffer, view, ambien
                       float(args[0]), float(args[1]), float(args[2]),
                       float(args[3]), float(args[4]), float(args[5]) )
             matrix_mult( systems[-1], edges )
-            draw_lines(eges, screen, zbuffer, color)
+            draw_lines(edges, screen, zbuffer, color)
             edges = []
 
         elif line == 'scale':
